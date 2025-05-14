@@ -1,0 +1,26 @@
+@use '@angular/material' as mat;
+
+
+mat-card {
+    width: 200px;
+}
+
+.contenedor-ponentes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 15px;
+    //background: green;
+}
+
+ul li {
+   display: inline;
+   justify-items: center;
+   padding: 10px 10px;
+   flex-grow: 1;
+   flex-basis: 200;
+   //background: red;
+}

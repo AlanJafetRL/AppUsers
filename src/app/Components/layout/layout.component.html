@@ -1,0 +1,69 @@
+<mat-toolbar class="customToolbar">
+    <mat-toolbar-row>
+
+        <div class="menuContainer">
+            <button mat-icon-button (click)="sidenav.toggle();" class="btnMenu">
+                <mat-icon class="iconMenu">menu</mat-icon>
+            </button>
+        </div>
+
+        <div class="contenedorLogos">
+            <img src="assets/img/logos/ipn.png" />
+            <img src="assets/img/logos/logoSimpleSemana.png" />
+            <img src="assets/img/logos/upiiz.png" />
+        </div>
+
+        <div class="menuContainer">
+            <!--Vacio para lograr 10%|80%|10%-->
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+
+    <mat-sidenav #sidenav opened="false">
+        <mat-nav-list>
+
+            <mat-list-item class="listItem" routerLink="/pages/inicio" (click)="sidenav.close();">
+                <span class="listText">Inicio</span>
+            </mat-list-item>
+
+            <mat-list-item class="listItem" routerLink="/pages/ponentes" (click)="sidenav.close();">
+                <span class="listText">Ponentes</span>
+            </mat-list-item>
+
+            <mat-list-item class="listItem" routerLink="/pages/talleres" (click)="sidenav.close();">
+                <span class="listText">Talleres</span>
+            </mat-list-item>
+
+            <mat-list-item class="listItem" routerLink="/pages/contacto" (click)="sidenav.close();">
+                <span class="listText">Contacto</span>
+            </mat-list-item>
+
+            <ul class="contenedorLogosRedes">
+                <li>
+                    <a class="enlacesLogos" href="https://www.instagram.com/semana_de_mecatronica_upiiz/"
+                        target="_blank" (click)="sidenav.close();">
+                        <img src="assets/img/logos/instagram.png" />
+                    </a>
+                </li>
+
+                <li>
+                    <a class="enlacesLogos" href="https://www.instagram.com" target="_blank" (click)="sidenav.close();">
+                        <img src="assets/img/logos/tiktok.png" />
+                    </a>
+                </li>
+
+            </ul>
+
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
