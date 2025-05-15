@@ -1,0 +1,15 @@
+@use '@angular/material' as mat;
+
+section {
+    //background: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    background: var(--mat-sys-inverse-surface);
+    .app {
+        width: 100%;
+        position: absolute;
+        top: 10%;
+    }
+}

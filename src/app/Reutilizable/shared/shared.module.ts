@@ -8,17 +8,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { CarouselComponent } from '../Components/carousel/carousel.component';
+import { ContactComponent } from '../Components/contact/contact.component';
 
 
 @NgModule({
-  declarations: [CarouselComponent],
+  declarations: [CarouselComponent, ContactComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MatDividerModule,
+    MatButtonModule
   ],
   exports: [
     CarouselComponent,
+    ContactComponent,
     CommonModule,
     LayoutModule,
     MatToolbarModule,

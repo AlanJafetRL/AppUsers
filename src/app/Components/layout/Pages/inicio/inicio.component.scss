@@ -1,11 +1,144 @@
 @use '@angular/material' as mat;
 
+//-- Animaciones --//
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 
-mat-card {
-    width: 200px;
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+li {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+
+//-- Generales --//
+h1 {
+    padding: 10px 10px;
+    font-weight: 900;
+}
+
+//-- Seccion semana mecatronica --//
+.seccion-semana {
+    //background: aqua;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-items: center;
+
+    h1 {
+        color: var(--mat-sys-primary);
+    }
+}
+
+.contenedor-semana {
+    //background: green;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    li {
+        //background: red;
+        display: inline;
+        justify-items: center;
+        padding: 10px 10px;
+        flex-grow: 1;
+        flex-basis: 200;
+
+        mat-card {
+            width: 300px;
+        }
+
+        img {
+            display: flex;
+            width: 70%;
+        }
+    }
+
+}
+
+
+//-- Seccion ponentes --//
+.seccion-ponentes {
+    background: var(--mat-sys-primary);
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-items: center;
+
+    h1 {
+        color: var(--mat-sys-on-primary);
+    }
 }
 
 .contenedor-ponentes {
+    //background: green;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    li {
+        display: inline;
+        justify-items: center;
+        padding: 10px 10px;
+        flex-grow: 1;
+        flex-basis: 200;
+        //background: red;
+
+        mat-card {
+            width: auto;
+        }
+    }
+
+    &__btn {
+        padding: 10px 10px;
+    }
+}
+
+
+//-- Seccion talleres --//
+.seccion-talleres {
+    //background: var(--mat-sys-primary);
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-items: center;
+
+    h1 {
+        color: var(--mat-sys-primary);
+    }
+}
+
+.contenedor-talleres {
+    //background: green;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -13,14 +146,29 @@ mat-card {
     width: 80%;
     flex-wrap: wrap;
     gap: 15px;
-    //background: green;
+
+    li {
+        display: inline;
+        justify-items: center;
+        padding: 10px 10px;
+        flex-grow: 1;
+        flex-basis: 200;
+        //background: red;
+
+        mat-card {
+            width: 300px;
+            text-align: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+                border-radius: 10px 10px;
+            }
+        }
+    }
+
+    &__btn {
+        padding: 10px 10px;
+    }
 }
 
-ul li {
-   display: inline;
-   justify-items: center;
-   padding: 10px 10px;
-   flex-grow: 1;
-   flex-basis: 200;
-   //background: red;
-}

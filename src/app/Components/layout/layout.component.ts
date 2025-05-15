@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild, HostListener } from '@angular/core';
-import { UtilidadesService } from '../../Reutilizable/utilidades.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
@@ -8,7 +7,7 @@ import { UtilidadesService } from '../../Reutilizable/utilidades.service';
   styleUrl: './layout.component.scss'
 })
 
-export class LayoutComponent  {
+export class LayoutComponent {
 
-  
+
 }

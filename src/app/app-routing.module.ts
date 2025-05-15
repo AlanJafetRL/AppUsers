@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { InicioComponent } from './Components/layout/Pages/inicio/inicio.component';
 
 const routes: Routes = [
   { path: 'pages', loadChildren: () => import("./Components/layout/layout.module").then(m => m.LayoutModule) }, // Ruta de páginas

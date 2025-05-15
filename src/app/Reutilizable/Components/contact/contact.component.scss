@@ -1,0 +1,52 @@
+@use '@angular/material' as mat;
+
+h1 {
+    padding: 10px 10px;
+    font-weight: 900;
+}
+
+//-- Seccion contacto --//
+.seccion-contacto {
+    background: var(--mat-sys-inverse-surface);
+    color: var(--mat-sys-inverse-on-surface);
+    height: auto;
+    padding-bottom: 25px;
+    justify-items: center;
+}
+
+.contenedor-contacto {
+    //background: green;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    li {
+        //background: red;
+        display: inline;
+        padding: 10px 10px;
+        flex-grow: 1;
+    }
+
+    &__icon-texto {
+        //background: green;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: start;
+
+        img {
+            padding: 10px 10px;
+            height: 20px;
+        }
+    }
+
+    &__btn {
+        padding: 10px 10px;
+    }
+}
