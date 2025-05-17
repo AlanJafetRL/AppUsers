@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
@@ -8,6 +8,5 @@ import { Component } from '@angular/core';
 })
 
 export class LayoutComponent {
-
-
+  
 }

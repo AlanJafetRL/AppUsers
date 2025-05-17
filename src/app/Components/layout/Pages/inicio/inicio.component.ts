@@ -10,5 +10,5 @@ import { CAROUSEL_DATA_ITEMS } from '../../../../data/constants/carousel.const';
 })
 export class InicioComponent {
   public carouselData: ICarouselItem[] = CAROUSEL_DATA_ITEMS;
-  
+
 }

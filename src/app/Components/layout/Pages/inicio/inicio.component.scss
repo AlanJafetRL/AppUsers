@@ -15,6 +15,11 @@
 
 html {
     scroll-behavior: smooth;
+    
+}
+
+.cuadro-scroll {
+    height: calc(100vh - 80px);
 }
 
 section {

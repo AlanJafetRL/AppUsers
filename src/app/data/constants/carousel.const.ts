@@ -4,22 +4,22 @@ export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
     {
         id: 1,
         title: {
-            first: 'TITULO',
-            second: 'Principal 1'
+            first: '6ta Semana de la',
+            second: 'Mecatrónica'
         },
-        subtitle: 'Esto es una gran descripcion',
+        subtitle: 'Esto es una gran descripcion sobre la semana de la mecatrónica',
         link: '/',
-        image: 'assets/img/carousel/01.jpg'
+        image: 'assets/img/carousel/prueba1.jpg'
     },
     {
         id: 2,
         title: {
-            first: 'TITULO',
-            second: 'Principal 2'
+            first: 'Registro:',
+            second: 'Concurso Robótica'
         },
-        subtitle: 'Esto es una gran descripcion',
-        link: '/',
-        image: 'assets/img/carousel/02.jpg'
+        subtitle: 'Categorías: Seguidor libre, sumo libre.',
+        link: 'https://www.instagram.com/',
+        image: 'assets/img/carousel/prueba2.jpeg'
     },
     {
         id: 3,
@@ -27,9 +27,9 @@ export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
             first: 'TITULO',
             second: 'Principal 3'
         },
-        subtitle: 'Esto es una gran descripcion',
+        subtitle: 'Aquí pueden ir más imágenes con enlaces en botón o sin ellos',
         link: '/',
-        image: 'assets/img/carousel/03.jpg'
+        image: 'assets/img/carousel/prueba1.jpg'
     },
 
 ];

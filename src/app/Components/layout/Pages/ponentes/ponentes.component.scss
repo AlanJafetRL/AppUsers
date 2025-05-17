@@ -1,0 +1,98 @@
+//-- Animaciones --//
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.cuadro-scroll {
+    overflow-y: scroll;
+    height: calc(100vh - 80px);
+}
+
+
+//-- Titulo --//
+.contenedor-titulo {
+    //background: aqua;
+    margin: 50px 10% 0 10%;
+}
+
+
+//-- Seccion ponentes --//
+.pag-seccion-ponentes {
+    //background: red;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-items: center;
+
+    &__contenedor {
+        //background: green;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        li {
+            //background: red;
+            display: inline;
+            justify-items: center;
+            padding: 10px 10px;
+            flex-grow: 1;
+            flex-basis: 200;
+
+            mat-card {
+                width: 350px;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                mat-card-header {
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+
+                .texto-presentacion {
+                    text-align: justify;
+                }
+
+                .divisor-textos {
+                    margin: 0 10% 0 10%;
+                }
+
+                .texto-horario {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+
+}

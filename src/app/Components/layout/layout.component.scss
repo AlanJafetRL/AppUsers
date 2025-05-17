@@ -1,118 +1,104 @@
 @use '@angular/material' as mat;
 
+
 //--Toolbar--//
 .customToolbar {
     width: 100%;
     height: 80px; // Altura de la barra de herramientas
-    //position: fixed;
     display: flex;
     align-items: center;
-    //z-index: 1000;
     background: var(--mat-sys-primary);
     color: var(--mat-sys-on-primary);
-}
 
-mat-toolbar-row {
-    //display: flex;
-    //align-items: center;
-    //justify-content: space-between;
-    height: 100%;
-    width: 100%;
-}
+    mat-toolbar-row {
+        height: 100%;
+        width: 100%;
 
-//--Boton menu--//
-.iconMenu {
-    //background: orange;
-    height: 30px;
-    width: 30px;
-    font-size: 30px;
-}
+        .menu-container {
+            //background: blue;
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
 
-.btnMenu {
-    //border-radius: 50%;
-    //background: green;
-    color: var(--mat-sys-on-primary);
-    height: 46px;
-    width: 46px;
-}
+            &__btnMenu {
+                //border-radius: 50%;
+                //background: green;
+                color: var(--mat-sys-on-primary);
+                height: 46px;
+                width: 46px;
 
-.menuContainer {
-    //background: blue;
-    width: 10%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
+                mat-icon {
+                    //background: orange;
+                    height: 30px;
+                    width: 30px;
+                    font-size: 30px;
+                }
+            }
+        }
 
-//--Logos--//
-.contenedorLogos {
-    width: 80%;
-    height: 100%;
-    display: flex; // Habilita flexbox
-    justify-content: center; //  Centra horizontalmente
-    align-items: center; //Centra verticalmente
-    gap: 16px;
-}
+        .contenedorLogos {
+            width: 80%;
+            height: 100%;
+            display: flex; // Habilita flexbox
+            justify-content: center; //  Centra horizontalmente
+            align-items: center; //Centra verticalmente
+            gap: 16px;
 
-.contenedorLogos img {
-    height: 50px; // Ajusta si los logos estan muy grandes
-    object-fit: contain; // Asegura que no se deformen
-}
-
-
-//--SideNav--//
-mat-sidenav {
-    background: var(--mat-sys-primary);
-    width: auto;
-    height: 300px;
-    margin-top: 200px;
+            img {
+                height: 50px; // Ajusta si los logos estan muy grandes
+                object-fit: contain; // Asegura que no se deformen
+            }
+        }
+    }
 }
 
 mat-sidenav-container {
-    height: calc(100vh - 80px); // Altura total menos la barra de herramientas
-}
+    height: calc(100vh - 80px);
+    overflow-y: hidden;
 
-mat-sidenav-content {
-    //margin-top: 80px;
-}
+    mat-sidenav {
+        background: var(--mat-sys-primary);
+        width: auto;
+        height: 300px;
+        margin-top: 200px;
 
+        mat-list-item {
+            height: 46px; // Altura total del item
+            line-height: 46px; // Hace que el texto se centre verticalmente
+            padding: 0 16px; // Asegura espacio horizontal
+            overflow: visible; // Asegura que el texto no se corte
+            display: flex; // Alineación vertical más robusta
+            align-items: center; // Centra los hijos en vertical
+            text-align: center;
+            font-size: 28px;
 
-.listItem {
-    height: 46px; // Altura total del item
-    line-height: 46px; // Hace que el texto se centre verticalmente
-    padding: 0 16px; // Asegura espacio horizontal
-    overflow: visible; // Asegura que el texto no se corte
-    display: flex; // Alineación vertical más robusta
-    align-items: center; // Centra los hijos en vertical
-    text-align: center;
-    font-size: 28px;
+            span {
+                line-height: normal;
+                color: var(--mat-sys-on-primary);
+                font-size: 28px;
+            }
+        }
 
-}
+        ul {
+            list-style-type: none;
+            padding-top: 30px;
 
-.listText {
-    line-height: normal;
-    color: var(--mat-sys-on-primary);
-    font-size: 28px;
-}
+            li {
+                //background: blue;
+                display: inline;
+                padding: 0px 5px 0px 5px;
 
+                img {
+                    height: 25px;
+                }
+            }
+        }
+    }
 
-.contenedorLogosRedes {
-    //background: green;
-    list-style-type: none;
-    padding-top: 30px;
-}
-
-ul li {
-    //background: blue;
-    display: inline;
-    padding: 0px 5px 0px 5px;
-}
-
-.contenedorLogosRedes img {
-    height: 25px;
-}
-
-.enlacesLogos {
-    //background: gray;
+    mat-sidenav-content {
+        //background: green;
+        height: auto;
+    }
 }

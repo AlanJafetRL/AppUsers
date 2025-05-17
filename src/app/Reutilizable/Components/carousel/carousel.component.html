@@ -9,13 +9,15 @@
                 [ngStyle]="{'background-image': 'url(' + section.image + ')', 'margin-left': section.marginLeft + '%'}">
                 <h1> {{section.title?.first}} <span> {{section.title?.second}} </span></h1>
                 <p> {{section.subtitle}} </p>
+                <button mat-flat-button *ngIf="section.link != '/'">
+                    <a mat-flat-button href="{{section.link}}" target="_blank">Registrate Aquí</a>
+                </button>
             </div>
         </ng-container>
     </div>
     <div class="dsc-carousel__steps">
         <div class="dsc-carousel__steps-step dsc-carousel__steps-step-{{currentPosition === item.id ? 'active': ''}}"
             *ngFor="let item of items" (click)="setCurrentPosition(item.id)">
-
         </div>
     </div>
 </div>
