@@ -1,5 +1,9 @@
 import { ICarouselItem } from "../../Reutilizable/Components/carousel/icarousel-item.metadata";
 
+/**
+ * Constante que contiene los datos del carrusel.
+ * Cada objeto representa un elemento del carrusel con su título, subtítulo, enlace e imagen.
+ */
 export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
     {
         id: 1,
@@ -9,7 +13,7 @@ export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
         },
         subtitle: 'Esto es una gran descripcion sobre la semana de la mecatrónica',
         link: '/',
-        image: 'assets/img/carousel/prueba1.jpg'
+        image: 'assets/img/carousel/prueba1.jpeg'
     },
     {
         id: 2,
@@ -29,7 +33,7 @@ export const CAROUSEL_DATA_ITEMS: ICarouselItem[] = [
         },
         subtitle: 'Aquí pueden ir más imágenes con enlaces en botón o sin ellos',
         link: '/',
-        image: 'assets/img/carousel/prueba1.jpg'
+        image: 'assets/img/carousel/prueba3.jpeg'
     },
 
 ];

@@ -9,6 +9,6 @@ import { CAROUSEL_DATA_ITEMS } from '../../../../data/constants/carousel.const';
   styleUrl: './inicio.component.scss'
 })
 export class InicioComponent {
-  public carouselData: ICarouselItem[] = CAROUSEL_DATA_ITEMS;
+  public carouselData: ICarouselItem[] = CAROUSEL_DATA_ITEMS; // Datos del carrusel importados desde el archivo de constantes
 
 }

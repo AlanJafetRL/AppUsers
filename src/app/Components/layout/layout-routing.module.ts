@@ -11,7 +11,8 @@ const routes: Routes = [{
   path: '',
   component: LayoutComponent,
   children: [
-    {path: '', redirectTo: 'inicio', pathMatch:'full'},
+    {path: '', redirectTo: 'inicio', pathMatch:'full'}, // Redirige a 'inicio' por defecto
+    // Rutas hijas del LayoutComponent
     {path: 'inicio', component:InicioComponent},
     {path: 'ponentes', component:PonentesComponent},
     {path: 'talleres',component:TalleresComponent},

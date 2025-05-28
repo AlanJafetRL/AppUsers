@@ -35,4 +35,10 @@ import { ContactComponent } from '../Components/contact/contact.component';
 
   ]
 })
-export class SharedModule { }
+export class SharedModule { 
+  /**
+   * Módulo compartido que agrupa componentes reutilizables y módulos de Angular Material.
+   * Incluye el componente de carrusel y el componente de contacto.
+   * Exporta módulos comunes y de Angular Material para su uso en otros módulos de la aplicación.
+   */
+}

@@ -9,9 +9,9 @@
                 [ngStyle]="{'background-image': 'url(' + section.image + ')', 'margin-left': section.marginLeft + '%'}">
                 <h1> {{section.title?.first}} <span> {{section.title?.second}} </span></h1>
                 <p> {{section.subtitle}} </p>
-                <button mat-flat-button *ngIf="section.link != '/'">
-                    <a mat-flat-button href="{{section.link}}" target="_blank">Registrate Aquí</a>
-                </button>
+                <div *ngIf="section.link != '/'">
+                    <a mat-raised-button href="{{section.link}}" target="_blank">Registrate Aquí</a>
+                </div>
             </div>
         </ng-container>
     </div>

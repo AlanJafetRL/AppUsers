@@ -1,3 +1,6 @@
+/**
+ * Interface for Carousel Item Metadata
+ */
 export interface ICarouselItem {
     id: number;
     title?: {
